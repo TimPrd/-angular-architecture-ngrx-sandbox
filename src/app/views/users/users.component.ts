@@ -19,6 +19,7 @@ export class UsersComponent implements OnInit {
   private error$ = this._store.pipe(select(selectUserListError));
 
   private isFailure = false;
+  
   constructor(private _store: Store<IAppState>, private _router: Router) {}
 
   ngOnInit() {
@@ -33,6 +34,7 @@ export class UsersComponent implements OnInit {
     console.log(`COMPONENT | I trigger 'getUsers' Actions`);
     this._store.dispatch(new GetUsers({ failure: this.isFailure }));
   }
+
   navigateToUser(id: number) {
     alert(`You choose : ${id}`);
     //this._router.navigate(['user', id]);
