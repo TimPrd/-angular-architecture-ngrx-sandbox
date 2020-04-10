@@ -1,0 +1,7 @@
+<app-bloc [title]="constructor.name">
+	<div class="flex">
+		<div>title : <a [routerLink]="['/todo']">{{todo.name}}</a></div>
+    <div>done : {{todo.isDone ? '✅' : '❌'}}</div>
+    <div>from : {{todo.from}}</div>
+	</div>
+</app-bloc>

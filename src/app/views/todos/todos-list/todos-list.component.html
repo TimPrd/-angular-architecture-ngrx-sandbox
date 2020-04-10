@@ -1,0 +1,8 @@
+<app-bloc [title]="constructor.name">
+  <ul>
+    <li *ngFor="let todo of todos" routerLinkActive="active">
+      <app-todo-card [todo]="todo"></app-todo-card>
+      
+    </li>
+  </ul>
+</app-bloc>

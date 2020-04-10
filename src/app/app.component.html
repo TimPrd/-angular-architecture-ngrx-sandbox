@@ -1,0 +1,9 @@
+<app-bloc [title]="constructor.name">
+	<nav>
+		<ul>
+			<li><a [routerLink]="['/todos']">Todos</a></li>
+			<li><a [routerLink]="['/users']">Users</a></li>
+		</ul>
+	</nav>
+	<router-outlet #routerOutlet="outlet"></router-outlet>
+</app-bloc>
