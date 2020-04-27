@@ -22,7 +22,12 @@ export class UsersComponent implements OnInit {
   private isFailure = false;
 
   constructor(private _store: Store<IAppState>, private _router: Router,    actions$: Actions
-) {}
+) {
+    // We can catch error directly in component too
+    // actions$.pipe(
+    //   ofType('[User] Get Users Failure'),
+    // ).subscribe(action => this.error = action.payload);
+}
 
   ngOnInit() {
     this.fetchData();

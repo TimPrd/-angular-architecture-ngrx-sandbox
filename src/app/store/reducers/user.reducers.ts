@@ -6,9 +6,13 @@ export const userReducers = (
   state = initialUserState,
   action: UserActions
 ): IUserState => {
+
+  //debug purpose
   if (!action.type.includes("@ngrx/")) {
     console.log(`REDUCE | Action asked is : ${action.type}`);
   }
+
+
   switch (action.type) {
     case EUserActions.GetUsersSuccess: {
       console.log(`REDUCE | ${action.type} - I modify state`);

@@ -25,7 +25,7 @@ export class UserEffects {
     switchMap((action) => {
       const isFailure = action.payload && action.payload.failure
 
-      console.log(`EFFECT | I ask to the service to fetch data..`);
+      console.log(`EFFECT | I ask the service to fetch data..`);
       return this._userService.getUsers(isFailure).pipe(
         map((response: IUserHttp) => {
           console.log(`EFFECT | Success ! Got the data. I trigger new Action`);
