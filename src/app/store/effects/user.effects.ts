@@ -15,7 +15,7 @@ import {
 } from "../actions/user.actions";
 import { IUserHttp, IUser } from "../../models/user.interface";
 import { selectUserList } from "../selectors/user.selectors";
-import { UserService } from "../../core/services/http/user.service";
+import { UserService } from "../../services/http/user.service";
 
 @Injectable()
 export class UserEffects {

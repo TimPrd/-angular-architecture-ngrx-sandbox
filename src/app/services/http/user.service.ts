@@ -3,8 +3,8 @@ import { HttpClient } from "@angular/common/http";
 import { Observable, of } from "rxjs";
 import { delay, concatMap, tap } from "rxjs/operators";
 
-import { IUserHttp } from "../../../models/user.interface";
-import { environment } from "../../../../environments/environment";
+import { IUserHttp } from "../../models/user.interface";
+import { environment } from "../../../environments/environment";
 
 @Injectable()
 export class UserService {

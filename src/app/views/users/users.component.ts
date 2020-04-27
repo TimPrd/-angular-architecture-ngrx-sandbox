@@ -21,7 +21,8 @@ export class UsersComponent implements OnInit {
   // Set to true to fake a failure
   private isFailure = false;
 
-  constructor(private _store: Store<IAppState>, private _router: Router) {}
+  constructor(private _store: Store<IAppState>, private _router: Router,    actions$: Actions
+) {}
 
   ngOnInit() {
     this.fetchData();
