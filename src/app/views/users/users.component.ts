@@ -27,7 +27,7 @@ export class UsersComponent implements OnInit {
     this.fetchData();
   }
 
-  changeIsFailure() {
+  changeForceFailure() {
     this.fetchData();
   }
 

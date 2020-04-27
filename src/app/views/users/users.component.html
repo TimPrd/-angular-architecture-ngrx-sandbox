@@ -2,7 +2,7 @@
 	<p>{{ error$ | async}}</p>
 
 	<label for="checkFail">Force failure : </label>
-	<input type="checkbox" [(ngModel)]="isFailure" name="checkFail" id="checkFail" (change)="changeIsFailure()"/>
+	<input type="checkbox" [(ngModel)]="isFailure" name="checkFail" id="checkFail" (change)="changeForceFailure()"/>
 
 	<app-users-list [users]="users$ | async" (userSelected)="navigateToUser($event)"></app-users-list>
 
